@@ -19,4 +19,18 @@ class TreeTest extends TestCase
 TXT;
         self::assertSame($expected, $result);
     }
+
+    public function test_it_creates_a_tree_with_a_height_of_two(): void
+    {
+        $tree = new Tree();
+
+        $result = $tree->generateWithHeight(2);
+
+        $expected = <<<TXT
+ *
+***
+ |
+TXT;
+        self::assertSame($expected, $result);
+    }
 }

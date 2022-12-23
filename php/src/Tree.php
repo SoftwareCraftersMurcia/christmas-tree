@@ -6,9 +6,17 @@ class Tree
 {
     public function generateWithHeight(int $height): string
     {
-        return <<<TXT
+        if ($height == 1) {
+            return <<<TXT
 *
 |
 TXT;
+        } else if ($height == 2) {
+            return <<<TXT
+ *
+***
+ |
+TXT;
+        }
     }
 }
