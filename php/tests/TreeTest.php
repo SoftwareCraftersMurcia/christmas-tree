@@ -33,4 +33,19 @@ TXT;
 TXT;
         self::assertSame($expected, $result);
     }
+
+    public function test_it_creates_a_tree_with_a_height_of_three(): void
+    {
+        $tree = new Tree();
+
+        $result = $tree->generateWithHeight(3);
+
+        $expected = <<<TXT
+  *
+ ***
+*****
+  |
+TXT;
+        self::assertSame($expected, $result);
+    }
 }

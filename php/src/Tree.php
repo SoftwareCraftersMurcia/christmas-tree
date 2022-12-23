@@ -17,6 +17,13 @@ TXT;
 ***
  |
 TXT;
+        } else if ($height == 3) {
+            return <<<TXT
+  *
+ ***
+*****
+  |
+TXT;
         }
     }
 }
