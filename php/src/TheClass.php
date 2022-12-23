@@ -4,8 +4,11 @@ namespace Kata;
 
 class TheClass
 {
-    public function theMethod(): bool
+    public function theMethod(): string
     {
-        return true;
+        return <<<TXT
+        *
+        |
+        TXT;
     }
 }

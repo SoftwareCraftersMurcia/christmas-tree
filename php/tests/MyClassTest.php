@@ -8,12 +8,17 @@ use PHPUnit\Framework\TestCase;
 class MyClassTest extends TestCase
 {
     /** @test */
-    public function give_me_a_good_name_please(): void
+    public function it_creates_a_tree(): void
     {
         $xxx = new TheClass();
 
         $result = $xxx->theMethod();
 
-        self::assertEquals(true, $result);
+        $tree = <<<TXT
+        *
+        |
+        TXT;
+
+        self::assertSame($tree, $result);
     }
 }
