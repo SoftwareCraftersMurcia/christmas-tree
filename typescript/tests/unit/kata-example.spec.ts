@@ -15,4 +15,13 @@ x
 xxx
  |`);
     });
+
+    it('should return a tree with 3 layers of leaves when we pass 3', () => {
+        const result = tree(3)
+        expect(result).toBe(`
+  x
+ xxx
+xxxxx
+  |`);
+    });
 });
