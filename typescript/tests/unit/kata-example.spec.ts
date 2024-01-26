@@ -5,6 +5,10 @@ import { treeBuilder } from "../../src/tree";
 // Resolve the body of the tree taking into account that we have 1 less space at the beginning: " xxx"
 
 describe('Tree in Typescript', () => {
+    it('should build a tree based on zero levels', () => {
+      const noTree="";
+      expect(treeBuilder(0)).toEqual(noTree);
+    });
     it('should build a tree based on two levels', () => {
       const tree=" x\n"
                    +"xxx\n"

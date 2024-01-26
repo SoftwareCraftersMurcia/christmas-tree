@@ -4,6 +4,12 @@ export function treeBuilder(level:number){
                 + "xxx\n"
                 + tailGenerator(level);
     }   
+    if (level === 3) {
+        return topLeafGenerator(level) + '\n'
+            +" xxx\n"
+            +"xxxxx\n"
+            +tailGenerator(level); 
+    }
     if (level === 4) {
 
         return      topLeafGenerator(level) + '\n'
@@ -21,10 +27,7 @@ export function treeBuilder(level:number){
                    +"xxxxxxxxx\n"
                    +tailGenerator(level)
     }
-    return topLeafGenerator(level) + '\n'
-          +" xxx\n"
-          +"xxxxx\n"
-          +tailGenerator(level);     
+    return "";
 }
 
 
