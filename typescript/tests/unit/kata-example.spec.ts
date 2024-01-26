@@ -7,4 +7,12 @@ describe('kata tree', () => {
 x
 |`);
     });
+
+    it('should return a tree with 2 layers of leaves when we pass 2', () => {
+        const result = tree(2)
+        expect(result).toBe(`
+ x
+xxx
+ |`);
+    });
 });
