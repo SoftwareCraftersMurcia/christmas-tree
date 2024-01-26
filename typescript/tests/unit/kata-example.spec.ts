@@ -28,7 +28,17 @@ describe('Tree in Typescript', () => {
                    +"   |";
         expect(treeBuilder(4)).toEqual(tree);
     });
-});
+
+    it('should build a tree based on four levels', () => {
+      const tree=   "    x\n"
+                   +"   xxx\n"
+                   +"  xxxxx\n"
+                   +" xxxxxxx\n"
+                   +"xxxxxxxxx\n"
+                   +"    |";
+        expect(treeBuilder(5)).toEqual(tree);
+    });
+}); 
 
 
 
